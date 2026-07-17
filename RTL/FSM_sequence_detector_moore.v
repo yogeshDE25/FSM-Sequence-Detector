@@ -1,5 +1,5 @@
 //moore FSM for sequence detector 1011
-module FSM_Pattern_gen(reset, clk, din, z);
+module FSM_Pattern_det(reset, clk, din, z);
 input wire reset, clk, din;
 output reg z;
 localparam idle = 3'b000, s1 = 3'b001, s10 = 3'b010, s101 = 3'b011, s1011 = 3'b111;
