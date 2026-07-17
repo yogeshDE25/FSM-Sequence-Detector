@@ -1,0 +1,14 @@
+ Time is                 5000 | din is 0 | state is 000 | Output is 0
+ Time is                15000 | din is 0 | state is 000 | Output is 0
+ Time is                25000 | din is 1 | state is 001 | Output is 0
+ Time is                35000 | din is 0 | state is 010 | Output is 0
+ Time is                45000 | din is 1 | state is 011 | Output is 0
+ Time is                55000 | din is 1 | state is 111 | Output is 1
+ Time is                65000 | din is 0 | state is 010 | Output is 0
+ Time is                75000 | din is 1 | state is 011 | Output is 0
+ Time is                85000 | din is 1 | state is 111 | Output is 1
+ Time is                95000 | din is 1 | state is 001 | Output is 0
+ Time is               105000 | din is 0 | state is 010 | Output is 0
+ Time is               115000 | din is 1 | state is 011 | Output is 0
+ Time is               125000 | din is 1 | state is 111 | Output is 1
+$finish called at time : 135 ns
