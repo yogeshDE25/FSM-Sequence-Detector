@@ -17,8 +17,6 @@ always@ (*) //next- state logic and moore output
 begin
 next_state = state;
 
-z = 1'b0;
-
 case(state)
 
 idle: begin //no bits matched
@@ -50,7 +48,7 @@ next_state = s10;
 end
 
 s1011: begin //matched "1011"
-z = 1'b1;
+
 if (din)
 next_state = s1;
 else
@@ -59,10 +57,16 @@ end
 
 default: begin
 next_state = idle;
-z = 1'b0;
 end
 
 endcase
+end
+
+always@ (*) //moore output logic
+begin
+
+z = ( state == s1011 );
+
 end
 
 endmodule
