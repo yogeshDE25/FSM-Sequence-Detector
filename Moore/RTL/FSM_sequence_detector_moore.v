@@ -13,7 +13,7 @@ begin
     state <= next_state;
 end
 
-always@ (*) //next- state logic and moore output
+always@ (*) //next- state logic 
 begin
 next_state = state;
 
