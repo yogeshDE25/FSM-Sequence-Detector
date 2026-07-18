@@ -2,7 +2,7 @@ module FSM_Moore_TB();
 reg clk, reset, din;
 wire z;
 
-FSM_Pattern_det dut (
+FSM_Pattern_det dut (                   //instantiation of the FSM module
             .clk   (clk),
             .reset (reset),
             .din   (din), 
@@ -47,7 +47,8 @@ send_bit (1);
 end
 endmodule
 
-//output 
-//101101 -> input
-//   ^
-//   z=1 -> output
+//output explanation
+//input sequence = 10110111011
+//10110111011 -> input
+//   ^  ^   ^
+//  z=1 z=1 z=1 -> output 
