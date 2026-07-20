@@ -75,7 +75,7 @@ FSM-Sequence-Detector/
 │
 ├── Mealy
 |    ├── RTL/
-|     │    └── FSM_sequence_detector_ mealy.v
+|    │    └── FSM_sequence_detector_ mealy.v
 |    ├── TB/
 |    │    └── FSM_Mealy_TB.v
 |    ├── Simulation/
