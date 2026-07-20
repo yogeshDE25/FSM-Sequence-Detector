@@ -69,6 +69,8 @@ IDLE → S1 → S10 → S101
 
 ## Project Structure
 
+```text
+
 FSM-Sequence-Detector/
 │
 ├── Mealy
@@ -94,6 +96,8 @@ FSM-Sequence-Detector/
      └── Docs/
            ├── State_diagram.svg
            └── State_table.png
+
+ ```          
 --
 
 ## Simulation Results
