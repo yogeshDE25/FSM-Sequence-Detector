@@ -1,6 +1,9 @@
-module FSM_pattern_mealy(clk, reset, in, out);
-input wire clk, reset, in;
-output reg out;
+module FSM_pattern_mealy(
+            input clk, 
+            input reset, 
+            input in, 
+            output reg out);
+            
 reg [1:0] state, next_state;
 localparam idle = 2'b00, s1 = 2'b01, s10 = 2'b10, s101 = 2'b11; //state encoding
 
