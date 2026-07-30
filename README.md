@@ -95,6 +95,12 @@ S10
 ↓  
 S101
 ```
+
+## Simulation Results
+
+![Waveform](./Mealy/Simulation/waveform.png)
+
+
 ---
 
 ## Project Structure
@@ -131,12 +137,6 @@ FSM-Sequence-Detector/
 └── README.md
 
  ```          
---
-
-## Simulation Results
-
-    Refer Simulation/ waveform.png
-
 ---
 
 ## Comparison
