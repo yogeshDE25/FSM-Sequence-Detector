@@ -50,6 +50,11 @@ S1011
 
 ```
 
+## Simulation Results
+
+![Waveform](./Moore/Simulation/waveform.png)
+
+
 ---
 
 ## Mealy FSM
