@@ -58,6 +58,10 @@ S1011
 
 ![State Diagram](./Moore/Docs/State_diagram.svg)
 
+## FSM State Table
+
+![State Table](./Moore/Docs/State_table.png)
+
 
 ---
 
