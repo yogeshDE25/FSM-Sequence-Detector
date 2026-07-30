@@ -11,7 +11,7 @@ The design demonstrates the differences between Moore and Mealy architectures in
 * Detects the binary sequence **1011**
 * Supports **overlapping sequence detection**
 * Implements both **Moore FSM** and **Mealy FSM**
-* Verified through simulation using dedicated testbenches
+* Verified through simulation using dedicated verilog testbenches
 
 ---
 
@@ -19,14 +19,14 @@ The design demonstrates the differences between Moore and Mealy architectures in
 
 ### Description
 
-The Moore FSM generates the output based only on the current state. An additional detection state is required to assert the output after the complete sequence has been received.
+In a **Moore Finite State Machine**, the output depends only on the **current state**.
 
 ### Inputs
 
 | Signal | Width | Description         |
 | ------ | ----- | ------------------- |
 | clk    | 1     | System clock        |
-| reset  | 1     | Synchronous reset  |
+| reset  | 1     | Asynchronous reset  |
 | din    | 1     | Serial input stream |
 
 ### Outputs
@@ -36,8 +36,19 @@ The Moore FSM generates the output based only on the current state. An additiona
 | z      | 1     | Sequence detected |
 
 ### State Sequence
+```
 
-IDLE → S1 → S10 → S101 → S1011
+IDLE 
+↓
+S1 
+↓
+S10
+↓ 
+S101
+↓ 
+S1011
+
+```
 
 ---
 
@@ -52,7 +63,7 @@ The Mealy FSM generates the output based on the current state and input. This al
 | Signal | Width | Description         |
 | ------ | ----- | ------------------- |
 | clk    | 1     | System clock        |
-| reset  | 1     | Synchronous reset  |
+| reset  | 1     | Asynchronous reset  |
 | in     | 1     | Serial input stream |
 
 ### Outputs
@@ -62,9 +73,15 @@ The Mealy FSM generates the output based on the current state and input. This al
 | out    | 1     | Sequence detected |
 
 ### State Sequence
-
-IDLE → S1 → S10 → S101
-
+```
+IDLE 
+↓ 
+S1
+↓  
+S10
+↓  
+S101
+```
 ---
 
 ## Project Structure
@@ -85,17 +102,20 @@ FSM-Sequence-Detector/
 |         ├── State_diagram.png
 |         └── State_table.png
 ├── Moore
-     ├── RTL/
-     │    └── FSM_sequence_detector_moore.v
-     ├── TB/
-     │    └── FSM_Moore_TB.v
-     ├── Simulation/
-     |    ├── Output.txt
-     |    └── waveform.png
-     |
-     └── Docs/
-           ├── State_diagram.svg
-           └── State_table.png
+|    ├── RTL/
+|    │    └── FSM_sequence_detector_moore.v
+|    ├── TB/
+|    │    └── FSM_Moore_TB.v
+|    ├── Simulation/
+|    |    ├── Output.txt
+|    |    └── waveform.png
+|    |
+|    └── Docs/
+|           ├── State_diagram.svg
+|           └── State_table.png
+|
+├── LICENSE
+└── README.md
 
  ```          
 --
