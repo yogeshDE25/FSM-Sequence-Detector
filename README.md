@@ -54,6 +54,10 @@ S1011
 
 ![Waveform](./Moore/Simulation/waveform.png)
 
+## FSM State Diagram
+
+![State Diagram](./Moore/Docs/State_diagram.svg)
+
 
 ---
 
