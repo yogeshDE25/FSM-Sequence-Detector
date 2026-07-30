@@ -100,6 +100,14 @@ S101
 
 ![Waveform](./Mealy/Simulation/waveform.png)
 
+## FSM State Diagram
+
+![State Diagram](./Mealy/Docs/State_diagram.png)
+
+## FSM State Table
+
+![State Table](./Mealy/Docs/State_table.png)
+
 
 ---
 
