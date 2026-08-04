@@ -17,7 +17,7 @@ in <= i;
 end
 endtask
 
-always@ (posedge clk)
+always @(posedge clk)
 begin
 $strobe("time %t | input %b | state %b | output %b ", $time, in, dut.state, out);
 end
