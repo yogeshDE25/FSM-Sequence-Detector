@@ -17,7 +17,7 @@ din <= i;
 end
 endtask
 
-always@ (posedge clk) //to display the output at every positive edge of clock
+always @(posedge clk) //to display the output at every positive edge of clock
 begin
 $strobe(" Time is %t | din is %b | state is %b | Output is %b", $time, din, dut.state, z );
 end
