@@ -4,7 +4,8 @@ module FSM_Pattern_det (
     input clk, 
     input din, 
     output reg z );
-localparam idle = 3'b000, s1 = 3'b001, s10 = 3'b010, s101 = 3'b011, s1011 = 3'b111;
+
+localparam idle = 3'b000, s1 = 3'b001, s10 = 3'b010, s101 = 3'b011, s1011 = 3'b111; //state encoding
 reg [2:0] state, next_state;
 
 always @(posedge clk or posedge reset) //state register
@@ -15,7 +16,7 @@ begin
     state <= next_state;
 end
 
-always @(*) //next- state logic 
+always @* //next- state logic 
 begin
 next_state = state;
 
@@ -64,7 +65,7 @@ end
 endcase
 end
 
-always @(*) //moore output logic
+always @* //moore output logic
 begin
 
 z = ( state == s1011 );
