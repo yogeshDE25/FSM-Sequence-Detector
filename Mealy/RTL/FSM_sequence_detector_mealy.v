@@ -7,7 +7,7 @@ module FSM_pattern_mealy(
 reg [1:0] state, next_state;
 localparam idle = 2'b00, s1 = 2'b01, s10 = 2'b10, s101 = 2'b11; //state encoding
 
-always @(posedge clk or posedge reset)//state register
+always @(posedge clk or posedge reset) //state register
 
 begin
 
@@ -18,7 +18,7 @@ state <= next_state;
 
 end
 
-always @(*) //next - state logic
+always @* //next - state logic
 
 begin
 
@@ -40,7 +40,7 @@ endcase
 
 end
 
-always @(*) //output logic
+always @* //output logic
 begin
 
 out = (state == s101) && in;
